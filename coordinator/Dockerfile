@@ -1,0 +1,7 @@
+FROM python:3                                                                                                                                                                                                                                 
+RUN pip install crossbar && \                                                                                                                                                                                                                 
+    pip install git+https://github.com/labgrid-project/labgrid.git && \                                                                                                                                                                       
+    git clone https://github.com/labgrid-project/labgrid /opt/labgrid                                                                                                                                                                         
+                                                                                                                                                                                                                                              
+WORKDIR /opt/labgrid                                                                                                                                                                                                                          
+CMD ["crossbar", "start"]       

@@ -1,0 +1,6 @@
+default-group:
+  location: default
+  USBSerialPort:
+    match:
+       'ID_SERIAL_SHORT': 'FTFOYKUQ'
+    speed: 115200
